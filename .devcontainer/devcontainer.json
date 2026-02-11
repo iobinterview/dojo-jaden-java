@@ -1,0 +1,17 @@
+{
+  "name": "Java Development",
+  "image": "mcr.microsoft.com/devcontainers/java:21-jdk-bullseye",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.java",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-dependency",
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-java-test",
+        "vscjava.vscode-maven"
+      ]
+    }
+  },
+  "postCreateCommand": "mvn install -DskipTests=false"
+}
